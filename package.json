@@ -11,9 +11,15 @@
   "type": "module",
   "license": "ISC",
   "devDependencies": {
+    "@wdio/allure-reporter": "^8.15.10",
     "@wdio/cli": "^8.15.10",
     "@wdio/local-runner": "^8.15.10",
     "@wdio/mocha-framework": "^8.15.10",
-    "@wdio/spec-reporter": "^8.15.10"
+    "@wdio/spec-reporter": "^8.15.10",
+    "chromedriver": "^116.0.0",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.8"
   }
 }
