@@ -1,4 +1,11 @@
 export const config = {
+    services: [
+        ['chromedriver', {
+            logFileName: 'wdio-chromedriver.log', // default
+            outputDir: 'driver-logs', // overwrites the config.outputDir
+            args: ['--silent']
+        }]
+    ],
     //
     // ====================
     // Runner Configuration
@@ -69,7 +76,8 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    // baseUrl: 'https://tenx.vercel.app',
+    baseURL:'https://www.irent.am',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
