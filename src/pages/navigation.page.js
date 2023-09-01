@@ -7,7 +7,15 @@ class NavigationPage extends Page {
         await  super.open(path);
     }
     get getHomeValue(){
-         return $(".short-info-section")
+         return $(".mainTitle")
+    }
+
+    get getButton(){
+         return $(".book-btn")
+    }
+
+    get expectedValue(){
+         return $(".carInf");
     }
 
 }

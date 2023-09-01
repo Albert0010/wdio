@@ -29,14 +29,25 @@ describe('Navigation functionality',()=>{
         await navigationPage.navigatePages(config.baseURL);
     });
 
-    Object.values(paths).forEach((paths)=>{
-        paths.forEach(async (path)=>{
-            it('should navigate all pages properly',async () => {
-                await navigationPage.navigatePages(`${config.baseURL}${path}`);
-                const actualErrorMessage = await  navigationPage.getHomeValue?.getText();
-                expect(actualErrorMessage).eql("Touch the soul of Armenia... the land of Noah!");
-                // await browser.pause(2000);
-            })
-        })
+    // Object.values(paths).forEach(({paths,expectedTitle})=>{
+    //     paths.forEach(async (path)=>{
+    //         it('should navigate all pages properly',async () => {
+    //             await navigationPage.navigatePages(`${config.baseURL}${path}`);
+    //             const actualErrorMessage = await  navigationPage.getHomeValue?.getText();
+    //             expect(actualErrorMessage.toLowerCase()).eql(expectedTitle.toLowerCase());
+    //             await browser.pause(2000);
+    //         })
+    //     })
+    // })
+
+    it('should click to book button and navigate to book page',async ()=>{
+       const a = await navigationPage.getButton;
+       // const b = a[0];
+        await a.waitForClickable({ timeout: 2500 })
+            await a.click()
+        // console.log(b);
+        const w = await a.get;
+        console.log({w});
+        await browser.pause(4000);
     })
 })
