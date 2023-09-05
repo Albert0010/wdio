@@ -10,13 +10,9 @@ class NavigationPage extends Page {
          return $(".mainTitle")
     }
 
-    get getButton(){
-         return $(".book-btn")
-    }
 
-    get expectedValue(){
-         return $(".carInf");
-    }
+
+
 
 }
 

@@ -1,11 +1,4 @@
 export const config = {
-    services: [
-        ['chromedriver', {
-            logFileName: 'wdio-chromedriver.log', // default
-            outputDir: 'driver-logs', // overwrites the config.outputDir
-            args: ['--silent']
-        }]
-    ],
     //
     // ====================
     // Runner Configuration
@@ -71,13 +64,12 @@ export const config = {
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
-    //
+    //Url
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'https://tenx.vercel.app',
-    baseURL:'https://www.irent.am',
+    baseUrl: 'https://www.irent.am',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
