@@ -43,7 +43,9 @@ export  const paths = {
 
 export const cssProperties = {
     bgColor:"background-color",
-    hoverValue:"#f6821f"
+    hoverValueLight:"#f6821f",
+    hoverValueOpacity:"#101010",
+
 }
 
 export const mainTitleValues =  ["Book Accommodation","Rent a Car","Book a Tour","Posts"];

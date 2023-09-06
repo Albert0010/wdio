@@ -11,10 +11,12 @@ class ButtonPage extends Page {
         return $(".book-btn");
     }
 
-    get getCssProperty(){
+    get getCssPropertyBgColor(){
         return this.getButton.getCSSProperty(cssProperties.bgColor);
     }
-
+    get getSeeAllButtons(){
+        return $$(".allBtn");
+    }
 
 
 }
