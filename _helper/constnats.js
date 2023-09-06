@@ -45,3 +45,5 @@ export const cssProperties = {
     bgColor:"background-color",
     hoverValue:"#f6821f"
 }
+
+export const mainTitleValues =  ["Book Accommodation","Rent a Car","Book a Tour","Posts"];

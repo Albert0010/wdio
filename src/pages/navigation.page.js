@@ -7,13 +7,12 @@ class NavigationPage extends Page {
         await  super.open(path);
     }
     get getHomeValue(){
-         return $(".mainTitle")
+         return $(".mainTitle");
     }
 
-
-
-
-
+    get getSeeAllButtons(){
+         return $$(".allBtn a");
+    }
 }
 
 export default new NavigationPage();
